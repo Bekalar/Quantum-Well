@@ -6,7 +6,7 @@ using namespace std;
 
 //Quantum Well
 
-#define V_0 0.64    //y range of QM Well (potential energy)
+#define V_0 0.64    //y range of QM Well
 #define A  4     //x range of QM Well
 #define DELTAE V_0/100.0       //energy range
 #define EPSILONE V_0/100000.0      //precision
@@ -68,8 +68,8 @@ void find_energy(double epsilon, double V0, double deltaE)
     int counter;
 
     fstream file1, file2;
-    file1.open("Hb.txt", ios::out);
-    file2.open("ZHb.txt", ios::out);
+    file1.open("Fun.txt", ios::out);
+    file2.open("Zero.txt", ios::out);
     file1.precision(7);
     file2.precision(7);
 
