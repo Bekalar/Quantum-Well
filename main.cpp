@@ -8,8 +8,8 @@ using namespace std;
 
 #define V_0 0.64    //y range of QM Well
 #define A  4     //x range of QM Well
-#define DELTAE V_0/100.0       //energy range
-#define EPSILONE V_0/100000.0      //precision
+#define DELTAE V_0/100.0      
+#define EPSILONE V_0/100000.0  
 
 
 double x_min, x_max;
@@ -28,7 +28,7 @@ double FunctionOdd(double epsilon)
 
     return F;
 }
-double Bisection(double xmin, double xmax, double la, double (*Function)(double))
+double Bisection(double xmin, double xmax, double epsilon, double (*Function)(double))
 {
     double Fmax, Fmin, xcenter;
     Fmax = Function(xmin);
@@ -47,7 +47,7 @@ double Bisection(double xmin, double xmax, double la, double (*Function)(double)
     }
     else
     {
-        while(xmax-xmin > la)
+        while(xmax-xmin > epsilon)
         {
             xcenter = (xmax+xmin)/2.0;
 
