@@ -6,8 +6,8 @@ using namespace std;
 
 //Quantum Well
 
-#define V_0 0.64    //y range of QM Well
-#define A  4     //x range of QM Well
+#define V_0 10.0   //y range of QM Well
+#define A  2.0    //x range of QM Well
 #define DELTAE V_0/100.0      
 #define EPSILONE V_0/100000.0  
 
@@ -80,7 +80,7 @@ void find_energy(double epsilon, double V0, double deltaE)
         E += deltaE;
     }
     file1.close();
-    // finding zero energy points (bisection)
+    // finding zero energy points (bisection) and save to file
     E = -V_0+0.001*V_0;
     while(E<0)
     {
@@ -104,7 +104,7 @@ void find_energy(double epsilon, double V0, double deltaE)
 }
 int main()
 {
-    //save to files and find energy
+    //function
     find_energy(EPSILONE,V_0,DELTAE);
 
     return 0;
