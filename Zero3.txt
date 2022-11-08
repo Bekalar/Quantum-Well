@@ -1,0 +1,5 @@
+Zero point :x1 -4.844634
+Zero point :x2 -4.380864
+Zero point :x3 -3.616558
+Zero point :x4 -2.569683
+Zero point :x5 -1.284722
