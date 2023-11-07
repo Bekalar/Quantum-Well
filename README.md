@@ -1,4 +1,5 @@
-# Quantum-Well
+<h2>Quantum-Well</h2>
+
 One-dimensional quantum well based on solution of stationary Schrodinger equation. <br/>
 The bisection algorithm finds zero energy points. <br/>
 This repository includes 6 '.txt' and 3 '.png' files with values for different sizes of quantum well. <br/>
